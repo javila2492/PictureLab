@@ -40,9 +40,9 @@ public class PictureTester
 
   public static void testFixUnderwater()
   {
-      Picture beach = new Picture("water.jpg");
-      beach.fixUnderwater();
-      beach.explore();
+      Picture water = new Picture("water.jpg");
+      water.fixUnderwater();
+      water.explore();
   }
   /** Method to test mirrorVertical */
   public static void testMirrorVertical()
@@ -55,7 +55,7 @@ public class PictureTester
 
   public static void testMirrorVerticalRightToLeft()
   {
-      Picture caterpillar = new Picture("jenny-red.jpg");
+      Picture caterpillar = new Picture("caterpillar.jpg");
       caterpillar.explore();
       caterpillar.mirrorVerticalRightToLeft();
       caterpillar.explore();
@@ -64,18 +64,18 @@ public class PictureTester
 
   public static void testMirrorHorizontal()
   {
-      Picture caterpillar = new Picture("redMotorcycle.jpg");
-      caterpillar.explore();
-      caterpillar.mirrorHorizontal();
-      caterpillar.explore();
+      Picture moto = new Picture("redMotorcycle.jpg");
+      moto.explore();
+      moto.mirrorHorizontal();
+      moto.explore();
   }
 
   public static void testMirrorHorizontalBotToTop()
   {
-      Picture caterpillar = new Picture("redMotorcycle.jpg");
-      caterpillar.explore();
-      caterpillar.mirrorHorizontalBotToTop();
-      caterpillar.explore();
+      Picture moto = new Picture("redMotorcycle.jpg");
+      moto.explore();
+      moto.mirrorHorizontalBotToTop();
+      moto.explore();
   }
   
   /** Method to test mirrorTemple */
@@ -85,6 +85,14 @@ public class PictureTester
     temple.explore();
     temple.mirrorTemple();
     temple.explore();
+  }
+
+  public static void testMirrorArms()
+  {
+      Picture snow = new Picture("snowman.jpg");
+      snow.explore();
+      snow.mirrorArms();
+      snow.explore();
   }
   
   /** Method to test the collage method */
@@ -121,8 +129,9 @@ public class PictureTester
     //testMirrorVertical();
     //testMirrorVerticalRightToLeft();
     //testMirrorHorizontal();
-    testMirrorHorizontalBotToTop();
+    //testMirrorHorizontalBotToTop();
     //testMirrorTemple();
+    testMirrorArms();
     //testMirrorArms();
     //testMirrorGull();
     //testMirrorDiagonal();
